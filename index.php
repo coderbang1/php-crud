@@ -1,5 +1,5 @@
 <?php 
-$con=mysqli_connect('localhost','root','12345','mange');
+$con=mysqli_connect(');
 $res=mysqli_query($con, "select * from employee");
 
 ?>
