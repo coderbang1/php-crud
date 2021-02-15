@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect('localhost','root','12345','mange');
+$con=mysqli_connect('');
 if (isset($_POST['submit'])) {
     $name=$_POST['name'];
     $email=$_POST['email'];
