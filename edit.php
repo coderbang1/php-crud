@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect('localhost','root','12345','mange');
+$con=mysqli_connect('');
 $id=$_GET['id'];
 if (isset($_POST['submit'])) {
     $name= $_POST['name'];
@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     mysqli_query($con,"update employee set name='$name',email='$email', dept='$dept' where  id='$id'");
     header("location:index.php");
 }
-$res=mysqli_query($con,"select * from employee where id='$id'");
+$res=mysqli_query($con,"select * from  where id='$id'");
 $row=mysqli_fetch_assoc($res);
 $name=$row['name'];
 $email=$row['email'];
